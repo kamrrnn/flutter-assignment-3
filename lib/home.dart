@@ -48,9 +48,10 @@ class HomePage extends StatelessWidget {
                     title: Text('Sabahat Fatima'),
                     subtitle: Text('Mobile Application Development'),
                     leading: CircleAvatar(
-                        // child: Text('SF'),
-                        backgroundImage: NetworkImage(
-                            'https://i.ytimg.com/vi/0bNewEtM2Wk/maxresdefault.jpg')),
+                      // child: Text('SF'),
+                      backgroundImage: NetworkImage(
+                          'https://i.ytimg.com/vi/0bNewEtM2Wk/maxresdefault.jpg'),
+                    ),
                     onTap: () {
                       Navigator.push(
                           context,

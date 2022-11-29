@@ -7,39 +7,89 @@ class ContactsInfo extends StatefulWidget {
   State<ContactsInfo> createState() => _ContactsInfoState();
 }
 
+void callTapped() {}
+
 class _ContactsInfoState extends State<ContactsInfo> {
   int _selectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
     Column(children: const [
       SizedBox(height: 24),
-      Text('Name: Sabahat'),
+      CircleAvatar(
+        // child: Text('SF'),
+        backgroundImage: NetworkImage(
+            'https://i.ytimg.com/vi/0bNewEtM2Wk/maxresdefault.jpg'),
+        radius: 100,
+      ),
       SizedBox(height: 24),
-      Text('Email: Sabahatfatima886@gmail.com'),
+      Text(
+        'Sabahat Fatima',
+        style: TextStyle(fontSize: 24),
+      ),
+      SizedBox(height: 24),
+      Text('Email: sabahatfatima886@gmail.com'),
       SizedBox(height: 24),
       Text('Date of Birth: 13-Feb-1999'),
       SizedBox(height: 24),
       Text('Office: Supra Factory'),
+      SizedBox(height: 48),
+      FloatingActionButton.large(
+        onPressed: callTapped,
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.call),
+      ),
     ]),
     Column(children: const [
       SizedBox(height: 24),
-      Text('Name: Sabahat'),
+      CircleAvatar(
+        // child: Text('SF'),
+        backgroundImage: NetworkImage(
+            'https://i.ytimg.com/vi/0bNewEtM2Wk/maxresdefault.jpg'),
+        radius: 100,
+      ),
       SizedBox(height: 24),
-      Text('Email: Sabahatfatima886@gmail.com'),
+      Text(
+        'Sabahat Fatima',
+        style: TextStyle(fontSize: 24),
+      ),
+      SizedBox(height: 24),
+      Text('Email: sabahatfatima886@gmail.com'),
       SizedBox(height: 24),
       Text('Date of Birth: 13-Feb-1999'),
       SizedBox(height: 24),
       Text('Office: Supra Factory'),
+      SizedBox(height: 48),
+      FloatingActionButton.large(
+        onPressed: callTapped,
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.call),
+      ),
     ]),
     Column(children: const [
       SizedBox(height: 24),
-      Text('Name: Sabahat'),
+      CircleAvatar(
+        // child: Text('SF'),
+        backgroundImage: NetworkImage(
+            'https://i.ytimg.com/vi/0bNewEtM2Wk/maxresdefault.jpg'),
+        radius: 100,
+      ),
       SizedBox(height: 24),
-      Text('Email: Sabahatfatima886@gmail.com'),
+      Text(
+        'Sabahat Fatima',
+        style: TextStyle(fontSize: 24),
+      ),
+      SizedBox(height: 24),
+      Text('Email: sabahatfatima886@gmail.com'),
       SizedBox(height: 24),
       Text('Date of Birth: 13-Feb-1999'),
       SizedBox(height: 24),
       Text('Office: Supra Factory'),
+      SizedBox(height: 48),
+      FloatingActionButton.large(
+        onPressed: callTapped,
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.call),
+      ),
     ]),
   ];
 
